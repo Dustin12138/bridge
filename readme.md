@@ -1,5 +1,5 @@
 # BRIDGE 
-### This repository houses data for the Bridge paper under review in the IEEE Security and Privacy 2023 conference. 
+### This repository houses data for the Bridge paper under review in the ACM Conference on Computer and Communications Security 2023. 
 
 More ease of review, our code are in either in jupiter notebooks or python code. 
 
