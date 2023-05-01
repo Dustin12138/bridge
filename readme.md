@@ -1,5 +1,5 @@
-# CYBORG 
-### This repository houses data for the CyBorg paper under review in the the ACM Conference on Computer and Communications Security 2023. 
+# BRIDGE
+### This repository houses data for the BRIDGE paper under review in the the ACM Conference on Computer and Communications Security 2023. 
 
 More ease of review, our code are in either in jupiter notebooks or python code. 
 
