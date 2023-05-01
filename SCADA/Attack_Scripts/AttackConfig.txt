@@ -1,2 +1,0 @@
-ACTION 1: value: 1
-ACTION 2: value: 0
