@@ -1,5 +1,5 @@
 # BRIDGE
-### This repository houses data for the BRIDGE paper under review in the the ACM Conference on Computer and Communications Security 2023. 
+### This repository houses data and implementation for the BRIDGE paper under review in the the ACM Conference on Computer and Communications Security 2023. 
 
 The dataset used in this work is from publicly available dataset of real-world Industrial processes and SCADA host execution of the same experiments from https://github.com/lordmoses/SCAPHY.
 
