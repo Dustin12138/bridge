@@ -19,10 +19,10 @@ import math
 # ## For training, we combined several files which had no attacks and for testing we used a single file where there were attacks and no attacks.
 # ## The training data has 157579 datapoints and testing data has 1924 datapoints, out of which 956 are instances without attacks and 968 are instances with attacks
 
-train = pd.read_csv('/home/anwesh/Transformer-based_physics_ae/data/Combined.csv')
+train = pd.read_csv('/home/user/Transformer-based_physics_ae/data/Combined.csv')
 train.drop(["millis"], axis = 1, inplace = True)
 
-test = pd.read_csv('/home/anwesh/Transformer-based_physics_ae/data/chemical_dosing_attack_normal_time_series_data.csv')
+test = pd.read_csv('/home/user/Transformer-based_physics_ae/data/chemical_dosing_attack_normal_time_series_data.csv')
 test.drop(['millis'], axis = 1, inplace = True)
 
 # ## Our training dataframe doesn't have the label column. However, since we know that all datapoints are instances without attacks we set the label of all the datapoints as 0
@@ -264,7 +264,7 @@ reduce_lr_calllback = tf.keras.callbacks.ReduceLROnPlateau(
     min_lr=0
 )
 
-path_checkpoint = "/home/anwesh/Transformer-based_physics_ae/code/seq_size4_1000eps/Checkpoint-{epoch:02d}.hdf5"
+path_checkpoint = "/home/user/Transformer-based_physics_ae/code/seq_size4_1000eps/Checkpoint-{epoch:02d}.hdf5"
 
 ckpt_callback = tf.keras.callbacks.ModelCheckpoint(filepath=path_checkpoint,
                                                  save_weights_only=True,
@@ -272,7 +272,7 @@ ckpt_callback = tf.keras.callbacks.ModelCheckpoint(filepath=path_checkpoint,
                                                  mode = 'min',
                                                  save_best_only=True)
 
-logger = tf.keras.callbacks.CSVLogger('/home/anwesh/Transformer-based_physics_ae/code/pinn_logs_pw03_seqsize4-1000eps.csv', separator=",", append=True)
+logger = tf.keras.callbacks.CSVLogger('/home/user/Transformer-based_physics_ae/code/pinn_logs_pw03_seqsize4-1000eps.csv', separator=",", append=True)
 
 
 attention_vae = attention_vae(latent_dim = features - 4,
